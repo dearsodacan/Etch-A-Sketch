@@ -1,0 +1,81 @@
+.hidden {
+  width: 0%;
+  height: 0%;
+  margin: -1px;
+  padding: 0;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  white-space: nowrap;
+  border: none;
+  position: absolute;
+}
+
+/* components width */
+.width-wide {
+  max-inline-size: min(100% - var(--space-s) * 2, var(--width-l));
+  /* aspect-ratio: 1/1; */
+  margin-inline: auto;
+}
+
+.width-medium {
+  max-inline-size: min(100% - var(--space-s) * 2, var(--width-m));
+  /* aspect-ratio: 1/1; */
+  margin-inline: auto;
+}
+
+.width-custom {
+  max-inline-size: min(100% - var(--space-s) * 2, var(--width-custom));
+  /* aspect-ratio: 1/1; */
+  margin-inline: auto;
+}
+
+.width-small {
+  max-inline-size: min(100% - var(--space-s) * 2, var(--width-s));
+  aspect-ratio: 1/1;
+  margin-inline: auto;
+}
+
+.width-full {
+  max-inline-size: none;
+  /* aspect-ratio: 1/1; */
+  margin-inline: auto;
+}
+
+/* articles width */
+.article-box > * {
+  --width: var(--width-s);
+  
+  max-inline-size: min(100% - var(--space-s) * 2, var(--width));
+  margin-inline: auto;
+}
+
+.article-medium {
+  --width: var(--width-m);
+}
+
+.article-large {
+  --width: var(--width-l);
+}
+
+.article-full {
+  max-inline-size: none
+}
+
+/* indent */
+.indent > * + * {
+  margin-block-start: var(--space-s);
+}
+
+.indent > * + :is(h1, h2, h3) {
+  margin-block-start: var(--space-2xl);
+}
+
+.indent > * + .emphasis, .indent > .emphasis + * {
+  margin-block-start: var(--space-xl);
+}
+
+.indent > * + .emphasis-lg, .indent > .emphasis-lg + * {
+  margin-block-start: var(--space-2xl);
+}
+

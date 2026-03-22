@@ -1,0 +1,67 @@
+.page-header {
+  position: fixed;
+  inset: 0;
+  
+  height: 8.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sketch-ul {
+  padding-inline: 0;
+}
+
+.sketch-ul {
+  display: flex;
+  column-gap: 2rem;
+  justify-content: center;
+}
+
+.sketch-btn {
+  width: 10rem;
+  height: 3rem;
+  border-radius: 1rem;
+  border: .225rem solid var(--clr-btn-border);
+  background-color: var(--clr-button-bg);
+  font-size: var(--step-custom);
+  transition: 170ms ease;
+    
+  border: none;
+}
+
+.sketch-btn:hover {
+    background-color: var(--clr-button-bg-hover);
+    scale: 1.1;
+  }
+
+.sketch-btn--darkening {
+    background-color: var(--clr-button-darkening);
+    color: var(--fc-white);
+    transition: 250ms ease;
+    
+    position: relative;
+}
+  
+.sketch-btn--darkening:hover {
+    background-color: var(--clr-button-darkening-hover);
+    scale: 1.1;
+}
+  
+.sketch-btn:active {
+  scale: .9;
+}
+
+.darkening-status {
+  position: absolute;
+  font-size: var(--step--1);
+  top: 80%;
+  left: 80%;
+
+  animation: pulse ease 2.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {scale: 1;}
+  50% {scale: 1.1;}
+}

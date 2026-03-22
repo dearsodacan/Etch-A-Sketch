@@ -1,0 +1,32 @@
+.sketch-board {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  width: var(--width-s);
+  aspect-ratio: 1/1;
+
+  gap: .5%;
+}
+
+.sketch-dot {
+
+  background-color: var(--clr-primary);
+  aspect-ratio: 1/1;
+  transition: 125ms ease;
+
+  border-radius: 25%;
+}
+
+.sketch-dot:hover {
+  background-color: var(--clr-primary-hover);
+  scale: 1.06;
+}
+
+.sketch-dot:active {
+  background-color: var(--clr-primary-active);
+  scale: 1;
+}
+
+.colored {
+  background-color: var(--clr-primary-hover);
+}

@@ -1,0 +1,12 @@
+@import url("defaults/index.css");
+@import url("components/index.css");
+@import url("layout/index.css");
+@import url("utils/index.css");
+
+@font-face {
+  font-family: "Lexend", sans-serif;
+  src: url("../fonts/Lexend-VariableFont_wght.ttf");
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}

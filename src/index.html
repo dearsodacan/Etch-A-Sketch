@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <nav>
+        <ul class="sketch-ul">
+          <li class="sketch-ul__item">
+            <button class="sketch-btn" data-action="create">Create new</button>
+          </li>
+          <li class="sketch-ul__item">
+            <button class="sketch-btn sketch-btn--darkening" data-action="darkening">
+              Darkening
+              <span class="darkening-status" id="darkening-span">Disabled!</span>
+            </button>
+          </li>
+          <li class="sketch-ul__item">
+            <button class="sketch-btn" data-action="reset">Reset current</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <main class="page-main">
+      <div class="width-small">
+        <section class="sketch-board" id="js-sketch-board">
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+          <div class="sketch-dot"></div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
