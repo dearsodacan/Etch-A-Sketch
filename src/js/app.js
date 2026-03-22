@@ -38,7 +38,7 @@ const createButton = document.querySelector('[data-action="create"]');
 createButton.addEventListener('click', createSketch);
 
 function createSketch() {
-  userSettings = parseInt(prompt('Squares per side for the new grid?'));
+  const userSettings = parseInt(prompt('Squares per side for the new grid?'));
 
   if (!userSettings) {
     alert('Empty input!');
